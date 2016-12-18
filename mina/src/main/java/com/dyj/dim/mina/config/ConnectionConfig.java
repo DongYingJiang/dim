@@ -2,6 +2,8 @@ package com.dyj.dim.mina.config;
 
 import android.content.Context;
 
+import java.io.Serializable;
+
 /**
  * Created by DYJ.
  * 日期：2016/12/11.
@@ -9,7 +11,7 @@ import android.content.Context;
  * 備注：
  */
 
-public class ConnectionConfig {
+public class ConnectionConfig implements Serializable {
 
     private Context context;
     private String ip;

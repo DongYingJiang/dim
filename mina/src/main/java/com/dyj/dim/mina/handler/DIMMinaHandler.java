@@ -4,10 +4,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.content.LocalBroadcastManager;
 
+import com.litesuits.android.log.Log;
 import com.litesuits.common.assist.Check;
 
 import org.apache.mina.core.service.IoHandlerAdapter;
 import org.apache.mina.core.session.IoSession;
+
+import static com.dyj.dim.mina.config.BaseConfig.DIM;
 
 /**
  * Created by DYJ.
@@ -19,7 +22,7 @@ import org.apache.mina.core.session.IoSession;
 public class DIMMinaHandler extends IoHandlerAdapter {
 
     private Context mContext;
-    private static final String MESSAGE = "message";
+    public static final String MESSAGE = "message";
     private static final String BROADCAST_MESSAGE_ACTION = "com.dyj.dim.nima.message";
 
     public DIMMinaHandler(Context mContext) {
@@ -35,6 +38,7 @@ public class DIMMinaHandler extends IoHandlerAdapter {
 
     @Override
     public void messageReceived(IoSession session, Object message) throws Exception {
+        Log.e(DIM, "收到消息...." + message.toString());
         if (Check.isNull(mContext)) {
             Intent intent = new Intent(BROADCAST_MESSAGE_ACTION);
             intent.putExtra(MESSAGE, message.toString());

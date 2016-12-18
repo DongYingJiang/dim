@@ -4,6 +4,9 @@ import android.os.HandlerThread;
 
 import com.dyj.dim.mina.config.ConnectionConfig;
 import com.dyj.dim.mina.manager.ConnectionManager;
+import com.litesuits.android.log.Log;
+
+import static com.dyj.dim.mina.config.BaseConfig.DIM;
 
 /**
  * Created by DYJ.
@@ -30,6 +33,7 @@ public class ConnectionThread extends HandlerThread {
         for (; ; ) {
             isConnection = manager.connect();
             if (isConnection) {
+                Log.e(DIM, "连接成功！");
                 break;
             }
             try {
