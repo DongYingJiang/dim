@@ -13,7 +13,7 @@ import static com.dyj.dim.mina.config.BaseConfig.DIM;
  * Created by DYJ.
  * 日期：2016/12/11.
  * 描述：
- * 備注：
+ * 备注：
  */
 
 public class DIMBaseBroadcast extends BroadcastReceiver {
