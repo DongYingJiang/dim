@@ -29,7 +29,15 @@
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_chat_list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:inputType="text" />
 
     </RelativeLayout>
 </layout>

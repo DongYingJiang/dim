@@ -21,7 +21,7 @@ import java.util.ArrayList;
  * Created by DYJ.
  * 日期：2016/12/15.
  * 描述：
- * 備注：
+ * 备注：
  */
 
 public class ChatFragment extends BaseFragment {

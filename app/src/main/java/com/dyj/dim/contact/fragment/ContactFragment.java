@@ -12,7 +12,7 @@ import com.dyj.dim.base.fragment.BaseFragment;
  * Created by DYJ.
  * 日期：2016/12/15.
  * 描述：
- * 備注：
+ * 备注：
  */
 
 public class ContactFragment extends BaseFragment {
