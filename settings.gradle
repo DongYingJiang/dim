@@ -1,1 +1,1 @@
-include ':app', ':mina', ':common'
+include ':app', ':mina', ':common', ':imageloader'

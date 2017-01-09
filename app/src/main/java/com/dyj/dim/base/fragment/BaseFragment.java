@@ -1,6 +1,7 @@
 package com.dyj.dim.base.fragment;
 
 import android.support.v4.app.Fragment;
+import android.view.View;
 
 /**
  * Created by DYJ.
@@ -10,6 +11,10 @@ import android.support.v4.app.Fragment;
  */
 
 public class BaseFragment extends Fragment {
+    protected View contentView;
 
 
+    public View getContentView() {
+        return contentView;
+    }
 }

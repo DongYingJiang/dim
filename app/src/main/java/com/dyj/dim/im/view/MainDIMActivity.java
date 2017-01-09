@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import com.dyj.dim.R;
 import com.dyj.dim.base.activity.BaseActivity;
 import com.dyj.dim.im.fragment.ChatFragment;
+import com.dyj.dim.im.fragment.TestFragment;
 
 public class MainDIMActivity extends BaseActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -77,7 +78,7 @@ public class MainDIMActivity extends BaseActivity implements NavigationView.OnNa
                     .add(R.id.content_main_dim, ChatFragment.newInstance(0L, 0))
                     .commit();
         } else if (id == R.id.nav_contacts) {  //联系人
-
+            getSupportFragmentManager().beginTransaction().add(R.id.content_main_dim, TestFragment.newInstance()).commit();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {

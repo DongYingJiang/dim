@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/DIM.iml" filepath="$PROJECT_DIR$/DIM.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageloader/imageloader.iml" filepath="$PROJECT_DIR$/imageloader/imageloader.iml" />
       <module fileurl="file://$PROJECT_DIR$/mina/mina.iml" filepath="$PROJECT_DIR$/mina/mina.iml" />
     </modules>
   </component>

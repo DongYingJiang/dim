@@ -15,21 +15,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        
-        <activity android:name=".login.LoginActivity">
+        <activity android:name=".login.LoginActivity" />
+        <activity
+            android:name=".im.view.MainDIMActivity"
+            android:label="@string/title_activity_main_dim"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".im.service.DIMService" />
+
+        <activity android:name=".ui.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".im.view.MainDIMActivity"
-            android:label="@string/title_activity_main_dim"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
-        <service android:name=".im.service.DIMService" />
     </application>
 
 </manifest>
