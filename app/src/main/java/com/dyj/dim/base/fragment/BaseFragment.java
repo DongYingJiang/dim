@@ -7,7 +7,7 @@ import android.view.View;
  * Created by DYJ.
  * 日期：2016/12/11.
  * 描述：
- * 備注：
+ * 备注：
  */
 
 public class BaseFragment extends Fragment {
